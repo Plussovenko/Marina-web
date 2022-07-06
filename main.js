@@ -2,10 +2,10 @@
 (function () {
   const burger = document.querySelector(".header__burger");
   const menu = document.querySelector(".nav__list");
-  const lockBody = document.getElementsByTagName("body");
+  const logosItem = document.querySelector(".header__logos");
   burger.addEventListener("click", () => {
     menu.classList.toggle("active");
     burger.classList.toggle("active");
-    lockBody.classList.toggle("lock");
+    logosItem.classList.toggle("active");
   });
 })();
