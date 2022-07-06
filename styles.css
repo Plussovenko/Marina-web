@@ -481,8 +481,8 @@ body {
   margin-top: 30px;
   z-index: 10;
 }
-.header__active {
-  background-color: #ff2a98;
+.active {
+  /* background-color: #ff2a98; */
 }
 .header__container {
   max-width: 1117px;
@@ -708,8 +708,6 @@ body {
   grid-template-columns: repeat(2, 630px);
   column-gap: 30px;
 }
-.video__item {
-}
 .video-link {
   width: 630px;
   height: 355px;
@@ -746,11 +744,19 @@ body {
 /* Footer end */
 /* Media */
 @media (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .header {
+    margin-top: 0;
+  }
   .header__burger {
     display: block;
     position: relative;
-    width: 30px;
-    height: 20px;
+    align-self: flex-end;
+    /* margin-right: 20px; */
+    width: 40px;
+    height: 30px;
     z-index: 11;
   }
   .header__burger span {
@@ -759,7 +765,9 @@ body {
     width: 100%;
     height: 2px;
     right: 0;
-    top: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
   }
 
   .header__burger::before,
@@ -770,6 +778,7 @@ body {
     width: 100%;
     height: 2px;
     left: 0;
+    transition: all 0.3s ease;
   }
   .header__burger::before {
     top: 0;
@@ -777,23 +786,66 @@ body {
   .header__burger::after {
     bottom: 0;
   }
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 50%;
+  }
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 44%;
+  }
+  .header__burger.active span {
+    transform: scale(0);
+  }
   .nav__list {
     position: fixed;
     display: block;
-    top: 0;
+    top: -100%;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: red;
     padding: 70px 10px 20px 10px;
+    overflow: auto;
+    transition: all 0.3s ease;
+  }
+  .nav__list.active {
+    top: 0;
   }
   .nav__item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .nav__link {
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 42px;
+    line-height: 48px;
     text-decoration: none;
-    text-transform: uppercase;
   }
+  .btn {
+    display: none;
+  }
+  .header__logos {
+    margin-right: 40px;
+  }
+  .logo.vk {
+    width: 60px;
+  }
+  .header__nav {
+    margin-top: 100px;
+  }
+  .intro {
+    padding-top: 621px;
+  }
+  .intro__desc {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .intro__photo{
+    justify-content: center;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .intro__photo img {
+    display: none;
+  }
+  .
 }
