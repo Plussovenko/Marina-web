@@ -287,9 +287,9 @@ fieldset {
   color: #fff;
   background: #ff2a98;
   padding: 18.5px 20px;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
   -webkit-box-shadow: 0 7px 0 #696868;
   box-shadow: 0 7px 0 #696868;
   border-radius: 18px;
@@ -301,9 +301,9 @@ fieldset {
   -webkit-box-shadow: 0 3px 0 #696868;
   box-shadow: 0 3px 0 #696868;
   background-color: rgb(100%, 16%, 60%, 0.8);
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 .nav__item::before,
 .nav__item:after {
