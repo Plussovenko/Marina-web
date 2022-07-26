@@ -35,6 +35,13 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 30,
     },
   },
+  preloadImages: false,
+  lazy: {
+    loadPrevNext: true,
+    loadOnTransitionStart: true,
+  },
+  watchSlidesProgress: true,
+  watchSlidersVisibility: true,
 });
 
 // Scroll to anchors
