@@ -22,18 +22,18 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/fav/favicon-32x32.png"
+      href="images/fav/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/images/fav/favicon-16x16.png"
+      href="images/fav/favicon-16x16.png"
     />
     <link rel="manifest" href="/images/fav/site.webmanifest" />
     <link
       rel="mask-icon"
-      href="/images/fav/safari-pinned-tab.svg"
+      href="images/fav/safari-pinned-tab.svg"
       color="#5bbad5"
     />
     <meta name="msapplication-TileColor" content="#da532c" />
@@ -43,7 +43,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Rostmarishka</title>
   </head>
   <body>
@@ -133,7 +133,7 @@
               />
               <div class="item__info">
                 <h3 class="item__title">Индивидуальный подход</h3>
-                <p class="item__text">
+                <p class="item__text item-text-1">
                   Группы по 5-7 человек позволят уделить внимание каждому
                   ученику
                 </p>
@@ -173,7 +173,7 @@
               />
               <div class="item__info">
                 <h3 class="item__title">Домашние задания</h3>
-                <p class="item__text">
+                <p class="item__text item-text-4">
                   К каждому уроку и проверяются лично преподавателем
                 </p>
               </div>
@@ -186,7 +186,7 @@
               />
               <div class="item__info">
                 <h3 class="item__title">Чаты</h3>
-                <p class="item__text">
+                <p class="item__text item-text-5">
                   Общение с одногруппниками, обсуждение новостей в контексте
                   общества
                 </p>
@@ -200,7 +200,7 @@
               />
               <div class="item__info">
                 <h3 class="item__title">Проверка знаний</h3>
-                <p class="item__text">
+                <p class="item__text item-text-6">
                   3 раза в год будет проходить устный зачет по теории
                 </p>
               </div>
@@ -376,6 +376,17 @@
           <div class="podcasts__grid">
             <div class="podcast__item">
               <iframe
+                src="https://www.youtube.com/embed/8fVV8ZpeybY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                class="podcast-link"
+              ></iframe>
+            </div>
+            <div class="podcast__item">
+              <iframe
                 src="https://www.youtube.com/embed/2AFs_PlKwjI"
                 title="YouTube video player"
                 frameborder="0"
@@ -385,7 +396,6 @@
                 loading="lazy"
               ></iframe>
             </div>
-            <div class="podcast__item podcast-link"></div>
           </div>
         </div>
       </section>

@@ -37,11 +37,11 @@ const swiper = new Swiper(".swiper", {
   },
   preloadImages: false,
   lazy: {
-    loadPrevNext: true,
-    loadOnTransitionStart: true,
+    loadPrevNext: false,
+    loadOnTransitionStart: false,
   },
-  watchSlidesProgress: true,
-  watchSlidersVisibility: true,
+  watchSlidesProgress: false,
+  watchSlidesVisibility: false,
 });
 
 // Scroll to anchors
